@@ -1,0 +1,463 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Restaurante</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{%static 'images/favicon.ico'%}" type="{%static 'image/x-icon'%}">
+    <link rel="apple-touch-icon" href="{%static 'images/apple-touch-icon.png'%}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}">
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{%static 'css/responsive.css'%}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{%static 'css/custom.css'%}">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="{%static 'images/logo.png'%}" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="{%url 'Storage:index'%}">Principal</a></li>
+						<li class="nav-item"><a class="nav-link" href="{%url 'Storage:About'%}">Nosotros</a></li>
+						<li class="nav-item"><a class="nav-link" href="{%url 'Storage:Contact'%}">Contacto</a></li>
+						<li class="nav-item"><a class="nav-link" href="{%url 'Storage:Carrito'%}"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+					</ul>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<!-- Start header -->
+	<div class="all-page-title page-breadcrumb">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Sobre Nosotros</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End header -->
+	
+	<!-- Start About -->
+	<div class="about-section-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 text-center">
+					<div class="inner-column">
+						<h1>Gracias por estar aquí<span>  Somos una gran familia y queremos que seas parte de nosotros</span></h1>
+						<h4>Nuestra historia</h4>
+						<p>Fundado en 2003 por nuestra cabeza la señora Lorena Ligia Dubón, a ella le debemos el delicioso sabor en cada una de sus recetas, en donde el secreto de nuestra buena cocina es el amor, el ingrediente que vuelve mágico cualquier platillo y que no consigues en cualquier sitio..</p>
+						<p>La vida hay que disfrutarla ¿Qué mejor manera de hacerlo que comiendo de nuestros platillos con sabor a magia?
+
+No hay como la buena comida para alegrarnos el día. Nuestra cocina hace felices a muchos cada día. No pierdas tú la oportunidad de con nuestra comida tu corazón también alegrar.</p>
+						<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="{%url 'Storage:Contact'%}">Contactar</a></p>
+
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<img src="{%static 'images/about-img.jpg'%}" alt="" class="img-fluid">
+				</div>
+				<div class="col-md-12">
+					<div class="inner-pt">
+						<p>Nuestro menú ha sido cuidadosamente pensando para personas como tú, para amantes de los placeres de la mesa. Sabemos que nuestros platillos les encantarán más que nada más en este planeta. </p>
+						<p>En este restaurante todo es acogedor, podrás disfrutar aquí de la experiencia de degustar nuestros deliciosos platillos sintiéndote como en tu hogar…  Pero nadie te exigirá recoger la mesa o los platos lavar.</p>
+						<p>	Los mejores logros se celebran en un restaurant acogedor como este. Te brindaremos rica comida, buen vino  y confort para que celebres en grande siempre.</p>
+						<p>Nuestro mayor deseo es su felicidad, y podemos ofrecérsela en un rico manjar. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End About -->
+	
+	<!-- Start Menu -->
+	<div class="menu-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Platillos fuertes</h2>
+						<p>Para que te llenes</p>
+					</div>
+				</div>
+			</div>
+				
+			<div class="row inner-menu-box">
+				<div class="col-3">
+					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Todos</a>
+						<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Hamburguesa</a>
+						<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Ensaladas</</a>
+						<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Platos fuertes</a>
+					</div>
+				</div>
+				
+				<div class="col-9">
+					<div class="tab-content" id="v-pills-tabContent">
+						<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+							<div class="row">
+								<div class="col-lg-4 col-md-6 special-grid drinks">
+									<div class="gallery-single fix">
+										<img src="https://i.postimg.cc/bvYV2Z24/hamburquesa-chesse.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Hamburguesa Cheese</h4>
+											<p>Con una combinación única de quesos para que se te haga agua la boca.</p>
+											<h5> Q37.00</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid drinks">
+									<div class="gallery-single fix">
+										<img src="https://i.postimg.cc/L6SDGq6w/tejana.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Tejana</h4>
+											<p>la picante, para los amantes del piquete.</p>
+											<h5> Q35.00</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid drinks">
+									<div class="gallery-single fix">
+										<img src="https://i.postimg.cc/T3MZh20X/ensalada.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Ensalada de pollo</h4>
+											<p>Con las verduras mas frescas</p>
+											<h5> Q27.00</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid lunch">
+									<div class="gallery-single fix">
+										<img src="{%static 'images/img-04.jpg'%}" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Italiana</h4>
+											<p>Con ingredientes que te haran sentir en Italia.</p>
+											<h5> Q40.00</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid lunch">
+									<div class="gallery-single fix">
+										<img src="{%static 'images/img-05.jpg'%}" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Ensalada Vegana</h4>
+											<p>Hecha de espinacas y champiñones para que degustes.</p>
+											<h5> Q30.00</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid lunch">
+									<div class="gallery-single fix">
+										<img src="https://i.postimg.cc/CLQb4dtW/arroz-chino.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Arroz Chino</h4>
+											<p>De una sola carne o mixto</p>
+											<h5> Q50.00</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="https://i.postimg.cc/xjs6WfhP/camarones-al-ajillo.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Camarones al Ajillo</h4>
+											<p>Con el sabor que te encanta.</p>
+											<h5> Q60.00</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="https://i.postimg.cc/MGD7Vt8Y/puyaso-americano.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Pullazo Americano</h4>
+											<p>Carne exportada para que saborees</p>
+											<h5> Q120.00</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="{%static 'images/img-06.jpg'%}" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Ensalada de lentejas</h4>
+											<p>Acomapañada de pollo y verduras frescas.</p>
+											<h5> Q30.00</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+							<div class="row">
+								<div class="col-lg-4 col-md-6 special-grid drinks">
+									<div class="gallery-single fix">
+										<img src="https://i.postimg.cc/L6SDGq6w/tejana.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Tejana</h4>
+											<p>la picante, para los amantes del piquete.</p>
+											<h5> Q35.00</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid drinks">
+									<div class="gallery-single fix">
+										<img src="https://i.postimg.cc/bvYV2Z24/hamburquesa-chesse.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Hamburguesa Cheese</h4>
+											<p>Con una combinación única de quesos para que se te haga agua la boca.</p>
+											<h5> Q37.00</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid drinks">
+									<div class="gallery-single fix">
+											<img src="{%static 'images/img-04.jpg'%}" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Italiana</h4>
+											<p>Con ingredientes que te haran sentir en Italia.</p>
+											<h5> Q40.00</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+							<div class="row">
+								<div class="col-lg-4 col-md-6 special-grid lunch">
+									<div class="gallery-single fix">
+										<img src="https://i.postimg.cc/T3MZh20X/ensalada.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Ensalada de pollo</h4>
+											<p>Con las verduras mas frescas</p>
+											<h5> Q27.00</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid lunch">
+									<div class="gallery-single fix">
+										<img src="{%static 'images/img-05.jpg'%}" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Ensalada Vegana</h4>
+											<p>Hecha de espinacas y champiñones para que degustes.</p>
+											<h5> Q30.00</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid lunch">
+									<div class="gallery-single fix">
+										<img src="{%static 'images/img-06.jpg'%}" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Ensalada de lentejas</h4>
+											<p>Acomapañada de pollo y verduras frescas.</p>
+											<h5> Q30.00</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+							<div class="row">
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="https://i.postimg.cc/CLQb4dtW/arroz-chino.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Arroz Chino</h4>
+											<p>De una sola carne o mixto</p>
+											<h5> Q50.00</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="https://i.postimg.cc/xjs6WfhP/camarones-al-ajillo.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Camarones al Ajillo</h4>
+											<p>Con el sabor que te encanta.</p>
+											<h5> Q60.00</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-4 col-md-6 special-grid dinner">
+									<div class="gallery-single fix">
+										<img src="https://i.postimg.cc/MGD7Vt8Y/puyaso-americano.jpg" class="img-fluid" alt="Image">
+										<div class="why-text">
+											<h4>Pullazo Americano</h4>
+											<p>Carne exportada para que saborees</p>
+											<h5> Q120.00</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!-- End Menu -->
+	
+	<!-- Start Contact info -->
+		<div class="contact-imfo-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 arrow-right">
+					<i class="fa fa-volume-control-phone"></i>
+					<div class="overflow-hidden">
+						<h4>Phone</h4>
+						<p class="lead">
+							+502 54941248
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 arrow-right">
+					<i class="fa fa-envelope"></i>
+					<div class="overflow-hidden">
+						<h4>Email</h4>
+						<p class="lead">
+							restaurante@gmail.com
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-map-marker"></i>
+					<div class="overflow-hidden">
+						<h4>Locación</h4>
+						<p class="lead">
+							Barrio Agua Caliente, Salamá Baja Vera´paz, Guatemala
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Contact info -->
+
+	<!-- Start Footer -->
+	<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<h3>Sobre nosotros</h3>
+					<p>Somos tu mejor opción en sabor y presentación, queremos que tu travesía por nuestras instalaciones nunca se te olvide </p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Subscribete</h3>
+					<div class="subscribe_form">
+						<form class="subscribe_form">
+							<input name="EMAIL" id="subs-email" class="form_input" placeholder="Direccion de correo electrónico" type="email">
+							<button type="submit" class="submit">SUBSCRIBIRSE</button>
+							<div class="clearfix"></div>
+						</form>
+					</div>
+					<ul class="list-inline f-social">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Contacto</h3>
+					<p class="lead">Salamá Baja Verapaz, Guatemala</p>
+					<p class="lead"><a href="#">+502 54941248</a></p>
+					<p><a href="#"> atenciónalcliente@admin.com</a></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Horarios</h3>
+					<p><span class="text-color">Lunes: </span>10:Am - 10PM</p>
+					<p><span class="text-color">Mar-Miér:</span> 9:Am - 10PM</p>
+					<p><span class="text-color">Jue-Vie :</span> 8:Am - 10PM</p>
+					<p><span class="text-color">Sáb-Dom :</span> 10:PM - 11:30PM</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="company-name">Andrea Yamileth Cortez Dubón. <a href="#">Proyecto Final</a> 6to BIPC :
+					</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- End Footer -->
+	
+	<a href="#" id="back-to-top" title="Back to top" style="display: none;"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+
+	<!-- ALL JS FILES -->
+	<script src="{%static '/jquery-3.2.1.min.js'%}"></script>
+	<script src="{%static 'js/popper.min.js'%}"></script>
+	<script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <!-- ALL PLUGINS -->
+	<script src="{%static 'js/jquery.superslides.min.js'%}"></script>
+	<script src="{%static 'js/images-loded.min.js'%}"></script>
+	<script src="{%static 'js/isotope.min.js'%}"></script>
+	<script src="{%static 'js/baguetteBox.min.js'%}"></script>
+	<script src="{%static 'js/form-validator.min.js'%}"></script>
+    <script src="{%static 'js/contact-form-script.js'%}"></script>
+    <script src="{%static 'js/custom.js'%}"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  	<script src="https://kit.fontawesome.com/00f20dde71.js" crossorigin="anonymous"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</html>
