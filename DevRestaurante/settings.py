@@ -102,7 +102,7 @@ DATABASES = {
         default=config('DATABASE_URL')
     )
 }
-}
+
 
 
 # Password validation
